@@ -1,0 +1,105 @@
+object Popup2View: TPopup2View
+  Size.Width = 238.000000000000000000
+  Size.Height = 250.000000000000000000
+  Size.PlatformDefault = False
+  object recBg: TRectangle
+    Align = Contents
+    Fill.Color = xFFF6F7F8
+    Size.Width = 238.000000000000000000
+    Size.Height = 250.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFCCCCCC
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+    object sdwBg: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.100000001490116100
+      Opacity = 0.200000002980232200
+      ShadowColor = claBlack
+    end
+  end
+  object ToolBar1: TToolBar
+    Align = Bottom
+    Position.Y = 210.000000000000000000
+    Size.Width = 238.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnCancel: TButton
+      Align = Left
+      Size.Width = 110.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Cancel'
+      OnClick = btnCancelClick
+    end
+    object btnApply: TButton
+      Align = Right
+      Position.X = 128.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Apply'
+      OnClick = btnApplyClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 238.000000000000000000
+    Size.Height = 210.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    Viewport.Width = 238.000000000000000000
+    Viewport.Height = 210.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 238.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'General Data'
+    end
+    object ListBoxItem5: TListBoxItem
+      Padding.Left = 5.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Position.Y = 35.000000000000000000
+      Size.Width = 238.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      object lblLastName: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 228.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = 'LastName'
+        TabOrder = 1
+      end
+      object edtLastName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Position.X = 5.000000000000000000
+        Position.Y = 27.000000000000000000
+        Size.Width = 228.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

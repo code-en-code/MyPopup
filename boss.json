@@ -1,0 +1,9 @@
+{
+	"name": "mypopup",
+	"description": "Library for working with popups.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/code-en-code/MyPopup.git",
+	"mainsrc": "/src",
+	"projects": [],
+	"dependencies": {}
+}
